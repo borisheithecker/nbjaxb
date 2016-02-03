@@ -2,7 +2,7 @@
 
 Facilitates the creation of JAXBContext instances in NetBeans RCP. Classes in remote modules can be registered for JAXBContext creation in System FS. 
 
-How to use:
+# How to use:
 
 Annotate classes you want to include into some JAXBContext. These can be located anywhere, in any module.  
 
