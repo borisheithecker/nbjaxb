@@ -1,6 +1,6 @@
 # nbjaxb
 
-Facilitates the creation of JAXBContext instances in NetBeans RCP. Classes in remote modules can be registered for JAXBContext creation in System FS. 
+Facilitates the creation of JAXBContext instances in NetBeans RCP. Classes in implementation modules can be registered for JAXBContext creation in System FS. 
 
 How to use:
 
