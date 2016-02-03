@@ -15,7 +15,7 @@ public class SomeTypeExt extends SomeJAXBType {
 ```
 
 
-To create a JAXBContext which knows this registered class, simply do: 
+To create a JAXBContext knowing the registered type, simply do: 
 
 ```
 final Class[] clz = JAXBUtil.lookupJAXBTypes("JAXBContextName", SomeJAXBType.class); 
@@ -28,4 +28,4 @@ catch (JAXBException ex) {
 }
 ```
 
-You don't need a module dependency on the other module containing the registered type. 
+No module dependency on the other module containing the registered type is required!
