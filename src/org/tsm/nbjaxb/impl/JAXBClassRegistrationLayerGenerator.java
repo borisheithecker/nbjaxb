@@ -38,12 +38,12 @@ public class JAXBClassRegistrationLayerGenerator<C> extends LayerGeneratingProce
         }
         for (Element e : roundEnv.getElementsAnnotatedWith(JAXBUtil.JAXBRegistration.class)) {
             JAXBUtil.JAXBRegistration r = e.getAnnotation(JAXBUtil.JAXBRegistration.class);
-            writeOne(r, e);
+            writeOneFile(r, e);
         }
         return true;
     }
 
-    protected void writeOne(JAXBUtil.JAXBRegistration r, Element e) throws LayerGenerationException, IllegalArgumentException {
+    protected void writeOneFile(JAXBUtil.JAXBRegistration r, Element e) throws LayerGenerationException, IllegalArgumentException {
         String componentPath = r.target() + "/JAXBTypes";
         String clazz = processingEnv.getElementUtils().getBinaryName((TypeElement) e).toString();
         String basename = clazz.replace('.', '-');
